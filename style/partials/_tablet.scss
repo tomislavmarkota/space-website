@@ -1,0 +1,167 @@
+@media (max-width: 1200px){
+    body{
+        background: url("../assets/home/background-home-tablet.jpg") no-repeat bottom left/cover;
+    }
+
+    header{
+        margin: 0;
+    }
+    .sticker-star{
+        margin-left: 40px;
+    }
+    .line{
+        display: none;
+    }
+    b{
+        display: none;
+    }
+    .menu ul{
+        margin: 0;
+    }
+
+    .home-intro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-top: 50px;
+        h1{
+            margin: 80px 0;
+        }
+    }
+
+    .home-explore{
+        margin-top: 30px;
+    }
+
+    .explore-btn{
+        position: relative;
+        left: 0%;
+        
+    }
+
+    .heading{
+        margin: 0;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .content-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .additional-info{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .planet-navigation ul li {
+        margin: 50px 10px 50px 10px;
+        a{
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+        }
+    }
+
+  
+
+    .crew-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crew-text{
+        h2{
+            font-size: 24px;
+            line-height: 28px;
+        }
+        h1{
+            font-size: 40px;
+            line-height: 46px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+    }
+
+    
+
+    .crew-image{
+        margin-top: 40px;
+        img{
+            position: static;
+            width: 456.37px;
+            height: 572px; 
+        }
+    }
+
+
+    // TECHNOLOGY TABLET VERSION
+
+    .technology{
+        background: url("../assets/technology/background-technology-tablet.jpg") no-repeat center center/cover;
+        .main-content{
+           padding: 0; 
+        }
+        .heading{
+            margin: 30px 90px;
+        }
+     
+    }
+
+    .technology-content{
+        flex-direction: column-reverse;
+    }
+
+    
+    .text-number-container{
+
+        flex-direction: column;
+    }
+
+    .number-group{
+        flex-direction: row;
+        
+    }
+
+    .numbers{
+        width: 60px;
+        height: 60px;
+        margin: 40px 15px;
+    }
+
+    .technology-text{
+        text-align: center;
+        padding: 10px 80px 30px 80px;
+        h1{
+            font-size: 40px;
+            line-height: 46px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+
+    .technology-img{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    #src-landscape{
+        width: 100%;
+    }    
+
+}
+
+

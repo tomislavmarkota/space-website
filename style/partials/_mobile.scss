@@ -1,0 +1,269 @@
+@media (max-width: 600px){
+
+    .sticker-star{
+        margin-top: 25px;
+    }
+
+    .hamburger-menu{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        z-index: 1000;
+        cursor: pointer;
+        &::before{
+            content: "";
+            width: 34px;
+            height: 3px;
+            background-color: $primary2;
+            position: absolute;
+            top: -10px;
+        }
+        &::after{
+            content: "";
+            width: 34px;
+            height: 3px;
+            background-color: $primary2;
+            position: absolute;
+            top: 10px;
+        }
+        &.active{
+            transform: translateX(10px);
+            position: absolute;
+            
+        }
+        &.active::before{
+            transform: rotate(-45deg) translate(-3px, 6px);
+            background-color: $primary2;
+            width: 75%;
+            height: 4px;
+        }
+        &.active::after{
+            transform: rotate(45deg) translate(-8px, -11px);
+            background-color: $primary2;
+            width: 75%;
+            height: 4px;
+        }
+        &.active .middle-line{
+            opacity: 0;
+        }
+    }
+    .middle-line{
+        content: "";
+        width: 34px;
+        height: 3px;
+        background-color: $primary2;
+        position: absolute;
+        top: 0;
+    }
+    
+
+    .menu{
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        z-index: 100;
+        &.active{
+            right: 0;
+        }
+    }
+    
+    .menu ul{
+        flex-direction: column;
+        margin-top: 100px;
+        li{
+            margin: 30px 0 30px 30px;
+            a{
+                padding: 0;
+                width: 100%;
+                &:hover{
+                    border-bottom: none;
+                    border-right: 6px solid $primary3;
+                }
+                &:is(:link, :active, :visited).active{
+                    border-right: 6px solid $primary3;
+                    border-bottom: none;
+                }
+                
+                b{
+                    display: inline-block;
+                }    
+            }
+        }
+    }
+
+    .home-intro{
+        margin: 50px 20px;
+        
+    }
+   
+    .home-intro-text-container{
+        flex-basis: 100%;
+        h3{
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2.7px;
+        }
+        h1{
+        font-size: 80px;
+        line-height: 50px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+
+    .home-intro-text{
+        width: 100%;
+    }
+
+    .explore-btn{
+        height: 200px;
+        width: 200px;
+    }
+
+    .home-explore{
+        margin-top: 55px;
+    }
+
+
+    .additional-info{
+        flex-direction: column;
+        
+    }
+
+    .destination .content-container{
+        margin-top: 20px;
+    }
+
+    .destination .distance{
+        margin-right: 0px;
+    }
+
+    .planet-navigation ul li {
+        margin: 50px 10px 50px 10px;
+        a{
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 2.3625px;
+        }
+    }
+
+    .destination .main-content{
+        padding: 20px 30px ;
+    }
+
+    
+
+    #planet-img{
+        width: 60%;
+    }
+
+    .destination .planet-name{  
+    font-size: 56px;
+    line-height: 64px;
+    margin: 0 0 20px 0;
+    }
+
+    .destination{
+        .planet-info{
+        font-size: 15px;
+        line-height: 25px;
+        }
+    }
+
+    
+    .heading{
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 40px;
+        span{
+            margin-right: 10px;
+        }
+    }
+    
+
+    .crew{
+        .main-content{
+            padding: 20px 0 50px 0;
+        }
+    }
+
+    .dots{
+       margin: 50px 10px 0px 10px; 
+    }
+
+    .crew-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .crew-text{
+        h2{
+            font-size: 16px;
+            line-height: 18px;
+        }
+        h1{
+            font-size: 24px;
+            line-height: 28px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 25px;
+            width: 100%;
+            padding: 0 30px;
+        }
+    }
+
+    .crew-image{
+        margin-top: 0;
+        width: 90%;
+        border-bottom: 1px solid #383B4B;
+        img{
+            transform: translateY(4px);
+            width: 177.12px;
+            height: 222px;
+           
+        }
+    }
+
+    .crew-text{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .crew-info{
+        margin-top: 40px;
+    }
+
+    .numbers{
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    
+    .technology-text{
+        padding: 10px 30px 30px 30px;
+        h1{
+            font-size: 24px;
+            line-height: 28px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 25px;
+            width: 100%;
+        }
+    }
+
+    .technology .main-content{
+        padding: 20px 0 50px 0;
+    }
+
+}

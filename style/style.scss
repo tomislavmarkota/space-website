@@ -1,0 +1,440 @@
+@import "./partials/colors";
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: url("../assets/home/background-home-desktop.jpg") no-repeat bottom left/cover;
+    color: $primary3;
+    height: 100vh;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+// imported HEADER STYLES *****
+@import "./partials/header";
+
+
+.home-intro{
+    display: flex;
+    padding: 80px;
+    margin: 120px 0 0 50px;
+}
+
+
+.home-intro-text-container{
+    flex-basis: 50%;
+    h3{
+        font-family: 'Barlow Condensed', sans-serif;  
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        color: $primary2;
+    }
+    h1{
+    font-family: Bellefair, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 50px;
+    }
+    p{
+        font-family: 'Barlow', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: $primary2;
+    }
+}
+
+
+.home-intro-text{
+    width: 450px;
+}
+
+
+
+// EXPLORE BUTTON 
+
+.home-explore{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.explore-btn{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    height: 275px;
+    width:275px;
+    border-radius: 50%;
+    background-color: $primary3;
+    font-family: Bellefair;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: $primary1;
+    border: none;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 0 80px #99999965; 
+        transition: box-shadow 0.3s ease;
+    }
+}
+
+
+
+
+// **** DESTINATION PAGE STYLES
+
+.destination{
+    background: url("../assets/destination/background-destination-desktop.jpg") no-repeat center center/cover;
+}
+
+.main-content{
+    padding: 30px 100px;
+}
+
+.heading{
+    font-family: Barlow Condensed;
+    font-weight: 100;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: $primary3;
+    margin-left: 70px;
+    
+    span{
+        margin-right: 30px;
+        opacity: 0.25;
+    }    
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 90px;
+}
+
+.planet-container{
+    flex-basis: 50%;
+    
+    img{
+        max-width: 100%;
+        
+    }
+}
+
+.info-container{
+    flex-basis: 30%;
+}
+
+.planet-navigation{
+    ul{
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        margin-right: 30px;
+        padding-bottom: 10px;
+        &:hover:not(.active){
+            border-bottom: 2px solid $primary3;
+            transition: opacity 0.4s ease; 
+            opacity: 0.5;
+        }
+        &.active{
+            border-bottom: 2px solid $primary3;
+        }
+    }
+    
+    a{
+        text-decoration: none;
+        color: $primary2;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+}
+
+.planet-name{
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 115px;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.planet-info{
+    font-family: Barlow;
+    font-size: 18px;
+    line-height: 32px;
+    color: $primary2;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #383B4B;
+    margin: 0px 0px 30px 0;
+}
+
+.additional-info{
+    display: flex;
+    
+    h3{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px; 
+        letter-spacing: 2.3625px;
+        color: $primary3;
+        
+    }
+    h2{
+        font-family: Bellefair;
+        font-size: 28px;
+        line-height: 32px;
+        color: $primary3;
+        text-transform: uppercase;
+        font-weight: 100;
+        
+    }
+}
+
+.distance{
+    margin-right: 50px;
+}
+
+
+// CREW - page styles *******************************
+
+.crew{
+    background: url(../assets/crew/background-crew-desktop.jpg) no-repeat center center/cover;
+    .main-content{
+        padding: 30px 100px 0px 100px;
+    }
+}
+
+.crew-container{
+    display: flex;
+    padding: 30px 80px 0 80px;
+    gap: 10%;
+
+}
+
+
+.crew-text{
+    flex-basis: 50%;
+    
+    h2{
+        font-family: Bellefair;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: $primary3;
+        opacity: 0.5;
+    }
+    h1{
+        font-family: Bellefair;
+        font-size: 56px;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: $primary3;
+        font-weight: normal;
+        
+    }
+    p{
+        width: 444px;
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: $primary2;
+    }
+}
+
+.dots{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 80px 20px 0 0;
+    background-color: $primary3;
+    opacity: 0.17;
+    cursor: pointer;
+    &.active{
+        opacity: 1;
+    }
+}
+
+
+.crew-image{
+    position: relative;
+    flex-basis: 50%;
+    height: 100%;
+    img{   
+        position: absolute; 
+        width: 568.07px;
+        height: 712px;
+        top: 0;
+    }
+}
+
+// TECHNOLOGY PAGE -- STYLES ----******
+
+.technology{
+    background: url("../assets/technology/background-technology-desktop.jpg") no-repeat center center/cover;
+    .main-content{
+        padding: 30px 0 30px 100px ;
+    }
+}
+
+
+
+.technology-content{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.number-group{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numbers{
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #4D4E56;
+    background: transparent;
+    text-align: center;
+    margin: 20px 0px;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+    &:hover:not(.active){
+        opacity: 0.6;
+    }
+    &.active{
+        color: #0B0D17;
+        background: $primary3;
+    }
+    
+
+
+}
+
+
+.technology-text{
+    padding: 80px;
+    h3{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;     
+        color: $primary2;
+        text-transform: uppercase;
+    }
+    h1{
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 64px;    
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: $primary2;
+        width: 444px;
+    }
+}
+
+.technology-img{
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 40%;
+    img{
+        max-width: 100%;
+        //width: 515px;
+        //height: 527px;
+    }
+}
+
+.text-number-container{
+    display: flex;
+    flex-basis:100%;
+    align-items: center;
+}
+
+
+// Imported media queries ************** 
+
+@import "./partials/tablet";
+@import"./partials/mobile";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
